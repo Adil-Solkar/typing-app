@@ -1,7 +1,7 @@
 const Header = () => {
     return(
         <>
-            <h1 style={{textAlign:'center', marginBottom:'5rem'}}>logo and navbar</h1>
+            <h3 style={{textAlign:'center', marginBottom:'4rem'}}>logo and navbar</h3>
         </>
     )
 }

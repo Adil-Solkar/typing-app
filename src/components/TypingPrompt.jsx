@@ -1,20 +1,15 @@
-import { useState } from "react";
-import { quotes } from "../utils/constants";
-const TypingPrompt = () => {
 
-  const [text, setText] = useState("");
-  const randomNumber = Math.floor(Math.random() * quotes.length);
-  const anotherRandomNumber = Math.floor(Math.random() * quotes.length);
+const TypingPrompt = ({text, setText}) => {
 
-  if (!text) {
-    setText(`${quotes[randomNumber]} ${quotes[anotherRandomNumber]}`);
-  }
-
+    function handleClick(){
+        setText()
+    }
   return (
     <>
-      <div style={{ textAlign: "center" }}>
+      <div className="typing-prompt">
         <h3>{text || "Loading...."}</h3>
       </div>
+      <button onClick={handleClick}>Change Quote</button>
     </>
   );
 };
